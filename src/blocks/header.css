@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 45px;
+}
+
+.header__name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+}
+
+.header__navigation {
+  display: flex;
+  gap: 20px;
+}
