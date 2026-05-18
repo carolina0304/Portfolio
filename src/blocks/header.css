@@ -6,11 +6,21 @@
 }
 
 .header__name {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
   font-size: 3rem;
 }
 
 .header__navigation {
   display: flex;
   gap: 20px;
+  font-family: "Bebas Neue";
+}
+
+.header__project {
+  font-family: "Bebas Neue";
+}
+
+.header__line {
+  width: 100%;
+  display: block;
 }
