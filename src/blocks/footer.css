@@ -1,16 +1,37 @@
 .footer {
   max-width: 880px;
-  padding-bottom: 60px;
+  padding: 40px 48px 60px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid rgba(240, 160, 208, 0.3); /* ← línea separadora */
+}
+
+.footer__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__nav a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__nav a:hover {
+  color: #b06080;
 }
 
 .footer__copyright {
-  width: 318px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  margin-top: 67px;
-  color: rgba(84, 84, 84, 1);
+  font-size: 14px;
+  color: rgba(84, 84, 84, 0.7);
+  text-align: center;
 }
 @media screen and (max-width: 1024px) {
   .footer__copyright {
