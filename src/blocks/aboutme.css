@@ -123,3 +123,55 @@
     display: none;
   }
 }
+
+/* ── Habilidades ── */
+.Aboutme__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid rgba(240, 160, 208, 0.3);
+  padding-top: 24px;
+}
+
+.Aboutme__skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Aboutme__skill-label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  color: #b06080;
+}
+
+.Aboutme__skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.Aboutme__skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease;
+}
+
+.Aboutme__skill-item:hover {
+  transform: translateY(-4px);
+}
+
+.Aboutme__skill-item img {
+  width: 36px;
+  height: 36px;
+}
+
+.Aboutme__skill-item span {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #4a4a4a;
+}
