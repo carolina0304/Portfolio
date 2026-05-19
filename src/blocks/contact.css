@@ -1,0 +1,177 @@
+.contact {
+  padding: 120px 48px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact__content {
+  max-width: 700px;
+}
+
+/* ───────── SUBTITLE ───────── */
+
+.contact__subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.15em;
+  color: #ee45aa;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* ───────── TITLE ───────── */
+
+.contact__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+  color: rgb(19, 18, 18);
+  letter-spacing: 0.03em;
+}
+
+/* ───────── LINE ───────── */
+
+.contact__line {
+  width: 120px;
+  height: 2px;
+  background: #f0a0d0;
+  margin: 28px 0 40px;
+}
+
+/* ───────── TEXT ───────── */
+
+.contact__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #4a4a4a;
+
+  margin-bottom: 10px;
+}
+
+/* ───────── EMAIL BUTTON ───────── */
+
+.contact__email {
+  display: inline-block;
+
+  margin-top: 36px;
+  padding: 18px 36px;
+
+  border: 1px solid #f0a0d0;
+
+  color: rgb(19, 18, 18);
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact__email:hover {
+  background: #f0a0d0;
+  color: #111827;
+
+  transform: translateY(-3px);
+}
+
+/* ───────── SOCIALS ───────── */
+
+.contact__socials {
+  display: flex;
+  gap: 18px;
+
+  margin-top: 40px;
+}
+
+.contact__social {
+  width: 52px;
+  height: 52px;
+
+  border: 1px solid rgba(240, 160, 208, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  color: white;
+  font-size: 1.2rem;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border 0.3s ease;
+}
+
+.contact__social:hover {
+  background: #f0a0d0;
+  color: #111827;
+
+  border-color: #f0a0d0;
+
+  transform: translateY(-5px);
+}
+
+/* ───────── BACKGROUND TEXT ───────── */
+
+.contact::after {
+  content: "CONTACT";
+
+  position: absolute;
+
+  right: -40px;
+  bottom: -30px;
+
+  font-size: 12rem;
+
+  font-family: "Bebas Neue", sans-serif;
+
+  color: rgba(255, 255, 255, 0.03);
+
+  pointer-events: none;
+}
+
+/* ───────── RESPONSIVE ───────── */
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 24px;
+  }
+
+  .contact__title {
+    font-size: 3.5rem;
+  }
+
+  .contact__text {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .contact__socials {
+    justify-content: center;
+  }
+
+  .contact__content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contact__line {
+    margin: 24px auto 40px;
+  }
+
+  .contact::after {
+    display: none;
+  }
+}
