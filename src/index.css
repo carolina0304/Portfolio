@@ -1,3 +1,5 @@
 @import url(./blocks/page.css);
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url(./blocks/header.css);
+@import url(./blocks/Hero.css);
+@import url(./blocks/projects.css);

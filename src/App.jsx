@@ -1,16 +1,16 @@
-import { useState } from "react";
-
 import "./App.css";
 import "@fontsource/bebas-neue";
 import Header from "./components/Header/Header.jsx";
+import Hero from "./components/Main/Hero.jsx";
+import Projects from "./components/Main/Projects.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="page">
         <Header />
+        <Hero />
+        <Projects />
       </div>
     </>
   );

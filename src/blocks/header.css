@@ -1,23 +1,25 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 45px;
-}
-
-.header__name {
-  font-family: "Bebas Neue";
-  font-size: 3rem;
+  padding: 24px 48px;
 }
 
 .header__navigation {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   font-family: "Bebas Neue";
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+.header__navigation a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: opacity 0.2s ease;
 }
 
-.header__project {
-  font-family: "Bebas Neue";
+.header__navigation a:hover {
+  opacity: 0.5;
 }
 
 .header__line {

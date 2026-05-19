@@ -1,0 +1,187 @@
+.projects {
+  padding: 60px 48px 80px;
+}
+
+/* Título sección */
+.projects__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  letter-spacing: 0.06em;
+  color: #1a1a1a;
+  margin-bottom: 48px;
+}
+
+/* Lista de proyectos */
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Tarjeta individual */
+.project-card {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(240, 160, 208, 0.35);
+  border-radius: 16px;
+  padding: 32px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 40px rgba(240, 160, 208, 0.3);
+  transform: translateY(-4px);
+}
+
+/* ── Lado izquierdo: mockup ── */
+.project-card__mockup {
+  flex: 0 0 360px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 260px;
+  border: 1px solid rgba(240, 160, 208, 0.2);
+}
+
+.project-card__tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(240, 160, 208, 0.5);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: #4a4a4a;
+}
+
+.project-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Placeholder si no hay imagen aún */
+.project-card__placeholder {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(240, 160, 208, 0.2),
+    rgba(245, 196, 154, 0.2)
+  );
+}
+
+.project-card__placeholder span {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: #b06080;
+  opacity: 0.6;
+}
+
+/* ── Lado derecho: info ── */
+.project-card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card__name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  letter-spacing: 0.04em;
+  color: #1a1a1a;
+  line-height: 1.15;
+}
+
+.project-card__desc {
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+/* Meta tabla */
+.project-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid rgba(240, 160, 208, 0.4);
+}
+
+.project-card__meta-label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #b06080;
+  padding: 12px 0 8px;
+}
+
+.project-card__meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(240, 160, 208, 0.25);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  color: #1a1a1a;
+}
+
+/* Links */
+.project-card__links {
+  display: flex;
+  gap: 24px;
+  padding-top: 4px;
+}
+
+.project-card__link {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  color: #b06080;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.project-card__link:hover {
+  color: #f5c49a;
+  opacity: 0.85;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .projects {
+    padding: 40px 24px 60px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .project-card__mockup {
+    flex: unset;
+    width: 100%;
+  }
+}

@@ -1,0 +1,122 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 48px 80px;
+  gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Lado izquierdo ── */
+.hero__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero__intro {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 0.15em;
+  color: #b06080;
+  text-transform: uppercase;
+}
+
+.hero__name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+}
+
+.hero__tags {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.hero__tags li {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #4a4a4a;
+  padding-left: 16px;
+  border-left: 2px solid #f0a0d0;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.hero__tags li:hover {
+  border-left-color: #f5c49a;
+  color: #1a1a1a;
+}
+
+.hero__tagprincipal {
+  font-size: 2.5rem !important;
+  color: #1a1a1a !important;
+}
+
+/* ── Lado derecho: foto + cuadro ── */
+.hero__photo-wrapper {
+  flex: 0 0 auto;
+  position: relative;
+  width: 320px;
+  height: 380px;
+}
+
+/* Cuadro decorativo detrás de la foto */
+.hero__photo-box::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: -16px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f0a0d0;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.hero__photo-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 4px;
+  display: block;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 24px 60px;
+    text-align: center;
+  }
+
+  .hero__tags li {
+    border-left: none;
+    border-bottom: 1px solid #f0a0d0;
+    padding-left: 0;
+    padding-bottom: 6px;
+  }
+
+  .hero__photo-wrapper {
+    width: 260px;
+    height: 310px;
+  }
+}
