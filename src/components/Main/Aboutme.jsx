@@ -44,7 +44,7 @@ const Aboutme = () => {
         <p className="Aboutme__subtitle">{t.about.subtitle}</p>
 
         <h2 className="Aboutme__title">
-          {t.about.title} <br /> {t.about.title}
+          {t.about.title1} <br /> {t.about.title2}
         </h2>
 
         <div className="Aboutme__line"></div>

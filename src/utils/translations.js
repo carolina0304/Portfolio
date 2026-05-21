@@ -49,7 +49,8 @@ export const translations = {
     },
     about: {
       subtitle: "Conoce más",
-      title: "Acerca \n de mí",
+      title1: "Acerca",
+      title2: "de mí",
       description1:
         "Mi camino comenzó en la arquitectura, diseñando espacios funcionales y resolviendo problemas reales. Hoy aplico esa misma lógica al desarrollo web, creando experiencias digitales intuitivas, estructuradas y centradas en el usuario.",
       description2:
@@ -121,7 +122,8 @@ export const translations = {
     },
     about: {
       subtitle: "Get to know me",
-      title: "About \n me",
+      title1: "About",
+      title2: "me",
       description1:
         "My path started in architecture, designing functional spaces and solving real problems. Today I apply that same logic to web development, creating intuitive, structured, and user-centered digital experiences.",
       description2:
