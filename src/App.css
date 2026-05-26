@@ -5,3 +5,63 @@
 @import url(./blocks/aboutme.css);
 @import url(./blocks/contact.css);
 @import url(./blocks//footer.css);
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #f0a0d0;
+  color: #1a1a1a;
+  text-decoration: none;
+
+  padding: 12px 20px 12px 14px;
+  border-radius: 50px;
+
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+
+  box-shadow: 0 6px 24px rgba(162, 37, 211, 0.4);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background: #b06080;
+  color: white;
+  box-shadow: 0 12px 32px rgba(176, 96, 128, 0.5);
+}
+
+.whatsapp-float svg {
+  fill: #1a1a1a; /* oscuro sobre fondo rosa */
+  flex-shrink: 0;
+}
+
+.whatsapp-float:hover svg {
+  fill: white; /* blanco al hacer hover */
+}
+
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+}
+
+/* En móvil solo muestra el ícono */
+@media (max-width: 600px) {
+  .whatsapp-float span {
+    display: none;
+  }
+
+  .whatsapp-float {
+    padding: 14px;
+    border-radius: 50%;
+  }
+}

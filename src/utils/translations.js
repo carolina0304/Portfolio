@@ -1,5 +1,6 @@
 export const translations = {
   es: {
+    whatsapp: "Contáctame",
     nav: {
       projects: "Proyectos",
       about: "Acerca de mi",
@@ -52,7 +53,7 @@ export const translations = {
       title1: "Acerca",
       title2: "de mí",
       description1:
-        "Mi camino comenzó en la arquitectura, diseñando espacios funcionales y resolviendo problemas reales. Hoy aplico esa misma lógica al desarrollo web, creando experiencias digitales intuitivas, estructuradas y centradas en el usuario.",
+        "Durante más de 12 años diseñé espacios funcionales para la industria, combinando estructura, experiencia y resolución de problemas. Hoy aplico esa misma visión arquitectónica al desarrollo web, creando experiencias digitales intuitivas, escalables y centradas en el usuario mediante diseño funcional y tecnología. ",
       description2:
         "Disfruto combinar diseño y tecnología para construir aplicaciones funcionales, responsivas y visualmente claras.",
       frontend: "Frontend",
@@ -73,6 +74,7 @@ export const translations = {
   },
 
   en: {
+    whatsapp: "Contact me",
     nav: {
       projects: "Projects",
       about: "About me",
@@ -125,7 +127,7 @@ export const translations = {
       title1: "About",
       title2: "me",
       description1:
-        "My path started in architecture, designing functional spaces and solving real problems. Today I apply that same logic to web development, creating intuitive, structured, and user-centered digital experiences.",
+        "For over 12 years, I designed functional spaces for industry, combining structure, experience, and problem-solving. Today, I apply that same architectural vision to web development, creating intuitive, scalable, and user-centered digital experiences through functional design and technology.",
       description2:
         "I enjoy combining design and technology to build functional, responsive, and visually clear applications.",
       frontend: "Frontend",
